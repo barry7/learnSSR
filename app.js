@@ -1,6 +1,6 @@
-//webpack打包入口
-import Vue from 'vue';
-import App from './App.vue';
+const Vue = require('vue');
+const App = require('./App.vue');
+
 var app = new Vue({
     el: '#app',
     components: {
