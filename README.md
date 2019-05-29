@@ -1,5 +1,5 @@
 # 简单的服务端渲染
-
+项目地址:<https://github.com/barry7/learnSSR/tree/server-side-render-withoutAjax-dev>
 ## package.json
 
 查看`package.json`可以发现，
@@ -110,5 +110,5 @@ module.exports = createApp;
     其中只有一个id为`app`的div，是一会`client.js`中VUE实例挂载的位置。
 
  ##查看结果
-最后使用浏览器打开[localhost:8002](http://localhost:8002)查看SSR的效果，或者打开
-[localhost:8003](http://localhost:8003)查看普通客户端渲染的效果。
+最后使用浏览器打开[localhost:8002/index](http://localhost:8002/index)查看SSR的效果，或者打开
+[localhost:8003/index](http://localhost:8003/index)查看普通客户端渲染的效果。
