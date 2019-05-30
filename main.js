@@ -1,12 +1,12 @@
-const Vue = require('vue');
-const App = require('./App.vue').default;
+import Vue from 'vue';
+import App from './App.vue';
+import createStore from './store'
 
-
-function createApp() {
+export default function () {
+    const store = createStore();
     const app = new Vue({
+        store,
         render: h => h(App)
     });
-    return app;
+    return {app, store};
 };
-
-module.exports = createApp;

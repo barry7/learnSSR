@@ -1,13 +1,24 @@
 <template>
     <div class='foo'>
         <h1>Foo</h1>
-        <p>Component </p>
+        <p>ajax数据：{{foo}} </p>
     </div>
 </template>
 
 <script>
     export default {
-        name: "Foo"
+        name: "Foo",
+        asyncData({store}) {
+            return store.dispatch('fetchFoo');
+        },
+        computed: {
+            foo() {
+                return this.$store.state.foo;
+            }
+        },
+        created() {
+            console.log('foo created');
+        }
     }
 </script>
 
